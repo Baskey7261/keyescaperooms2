@@ -1,7 +1,7 @@
 #container {
-    background-image: url('../assets/img/metal-door-right.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../assets/img/metal-door-right-strip.jpg');
+    background-repeat: repeat-y;
+    -background-size: cover;
     background-position: top right;
     border-left: 2px solid #000;
     display: grid;
@@ -16,9 +16,9 @@
 }
 
 #leftContainer {
-    background-image: url('../assets/img/metal-door-left.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../assets/img/metal-door-left-strip.jpg');
+    background-repeat: repeat-y;
+    -background-size: cover;
     background-position: top left;
     border-right: 2px solid #000;
     display: grid;
