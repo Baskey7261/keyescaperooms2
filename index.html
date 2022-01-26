@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/default_fonts.css" />
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/slidingdoors.css">
+<link rel="stylesheet" href="css/all_fonts.css">
+<link rel="stylesheet" href="css/usercss.css">
+<link rel="stylesheet" href="css/custom_fonts.css">
+<link rel="stylesheet" media="(max-width:530px)" href="css/mobile.css">
+<script src="js/jquery.js"></script>
+<script src="js/serverside.js"></script>
+<title>Key Escape Rooms</title>
+</head>
+<body>
+
+        <div id="leftContainer"></div>
+        <div id="container">
+            <div id="dialContainer">
+                <img src="assets/img/outerdial.png" id="outer">
+                <img src="assets/img/innerdial.png" id="inner" onclick="rotate('inner',180)">
+            </div>
+        </div>
+        
+        
+
+
+
+        <div id="bodyCover" class="img bodyCover flexy textBlock" data-group="image"></div>
+        <nav>
+            <div onclick="showOptions()">logo</div>
+            <!-- <div>HOME</div> -->
+            <div>ABOUT</div>
+            <div>CONTACT</div>
+        </nav>
+
+        <header id="head" class="head img flexy textBllock" data-group="image" style="null">
+            
+            
+            <div class="socLinks">
+                <div class="fb"></div>
+                <div class="tw"></div>
+                <div class="ins"></div>
+            </div>
+            <div class="headBlock">
+                <h1 id="mainTitle" class="pageTitle textBlock desk">KEY ESCAPE ROOMS</h1>
+                <h1 id="mainTitleMob" class="pageTitle textBlock mob">KEY<br>ESCAPE ROOMS</h1>
+                <h3 data-group="sub" id="subTitle" class="tagline textBlock">Welcome, we've been expecting you.</h3>
+            </div>
+        </header>
+
+        <div id="wrapper">
+            <div class="container">
+                <div id="cell1" class="cell1 flexy desk" style="null">
+                    <p data-group="subSub" id="h41" class="subSub textBlock">He who dares...</p>
+                    <h3 data-group="sub" id="h32" class="sub textBlock">Have you got what it takes?</h3>
+                    <p data-group="para" id="p1" class="em textBlock">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab tenetur natus perspiciatis.</p>
+
+                    <p data-group="para" id="p2" class="para textBlock">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur.</p>
+                </div>
+                <h3 id="mh31" class="sub textBlock mob">He who dares, does not always win.</h3>
+                <p id="mp1" class="para textBlock mob">Lorem ipsum dolor sit amet conse adipisicing elit. Quaerat dolore.</p>
+                <div id="img1" data-group="image" class="flexy cell2 img pic1 textBlock">
+                    
+                    
+                </div>
+
+                <div id="cell131" class="cell3 flexy" style="null">
+                    <h3 data-group="sub" id="h33" class="sub textBlock">Families welcome.</h3>
+                    <p data-group="para" id="p3" class="para textBlock">Lorem ipsum dolor sit amet conse adipisicing elit. Quaerat dolore laudant tempora sint labore sapeos dolor nulla conseq est soluta totam. Lorem ipsum dolor sit amet.</p>
+                    <p data-group="subSub" id="h42" class="subSub textBlock">Book on-line today.</p>
+                    <!-- </span> -->
+                    <!-- <button>READ MORE</button> -->
+                </div>
+
+                <div>
+                    <div class="cell4">
+
+                        <!-- <div class="cell4-header">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    </div> -->
+                        <div id="cell41" class="cell4-cell1 flexy" style="null">
+                            <h3 data-group="sub" id="h34" class="sub textBlock">The Galleon</h3>
+                            <p data-group="para" id="p4" class="para textBlock">Lorem ipsum dolor sit amet.</p>
+                            <div id="img2" data-group="image" class="flexy img pic2 textBlock">
+                                
+                                
+                            </div>
+                            <p data-group="para" id="p5" class="para textBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure debitis neque maxime.</p>
+                            <p id="dd1" class="para textBlock dropDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium a delectus, corrupti temporibus, esse ad praesentium rerum laborum mollitia numquam repellendus illo, perspiciatis sint ipsa. Autem quo porro sit ratione ipsum alias, beatae illo quos aperiam hic dolore blanditiis soluta, minima sunt temporibus distinctio veritatis placeat ab excepturi iste! Vero hic placeat odit laborum praesentium. Excepturi accusantium repellat perferendis error temporibus quo mollitia qui tempora assumenda, eius iusto laborum odit? Rem omnis magni ratione consequatur cumque quos ducimus? Animi.                            </p>
+                            <h6 class="more" data-label1="Read more..." data-label2="Read less" onclick="learnMore(this)">Read more...</h6>
+                            <button>BOOK NOW</button>
+                        </div>
+                        <div id="cell42" class="cell4-cell1 flexy" style="null">
+                            <h3 data-group="sub" id="h35" class="sub textBlock">Angry Hour</h3>
+                            <p data-group="para" id="p6" class="para textBlock">Lorem ipsum dolor sit amet.</p>
+                            <div id="img3" data-group="image" class="flexy img pic3 textBlock">
+                                
+                                
+                            </div>
+                            <p data-group="para" id="p7" class="para textBlock">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt suscipit ipsa placeat.</p>
+                            <p id="dd2" class="para textBlock dropDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusantium a delectus, corrupti temporibus, esse ad praesentium rerum laborum mollitia numquam repellendus illo, perspiciatis sint ipsa. Autem quo porro sit ratione ipsum alias, beatae illo quos aperiam hic dolore blanditiis soluta, minima sunt temporibus distinctio veritatis placeat ab excepturi iste! Vero hic placeat odit laborum praesentium. Excepturi accusantium repellat perferendis error temporibus quo mollitia qui tempora assumenda, eius iusto laborum odit? Rem omnis magni ratione consequatur cumque quos ducimus? Animi.</p>
+                            <h6 class="more" data-label1="Read more..." data-label2="Read less" onclick="learnMore(this)">Read more...</h6>
+
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                    <div id="cell43" class="cell4-footer">
+                        <p data-group="para" id="p8" class="para textBlock">Lorem ipsum dolor, sit amet consectetur adipisicing elit. nulla consequatur est. Laboriosam ea veritatis dolorum excepturi similique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footnote">
+                <p data-group="subSub" id="h44" class="subSub footnote textBlock">WHAT ARE YOU WAITING FOR?</p>
+                <p data-group="para" id="p9" class="para textBlock">Make your reservation today.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerSocial">
+                <div class="fb"></div>
+                <div class="tw"></div>
+                <div class="ins"></div>
+            </div>
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+            <div class="copyright">
+                © Key Escape Rooms 2021
+            </div>
+        </footer>
+        <script src="js/slidingdoors.js"></script>
+        <script src="pages/all_data.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/default.js"></script>
+    
+</body>
+</html>

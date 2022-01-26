@@ -1,0 +1,124 @@
+.desk {
+    display: none;
+}
+
+.mob {
+    display: block;
+}
+
+header {
+    height: 100vh;
+    -background: linear-gradient( to bottom, rgba(104, 7, 83, 0.2), rgba(24, 3, 17, 0.1));
+}
+
+.socLinks {
+    display: flex;
+    gap: 15px;
+    grid-row: 7/8;
+    grid-column: 1/-1;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#wrapper {}
+
+#mainTitleMob {
+    font-size: 2.8rem;
+}
+
+#subTitle {
+    padding: 0px 50px 0px 50px;
+}
+
+.container {
+    row-gap: 0px;
+    width: 100%;
+}
+
+#cell1 {
+    display: none;
+}
+
+#img1 {}
+
+.cell2 {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    min-width: 250px;
+    border: 1px solid rgb(94, 93, 93);
+    max-width: 94%;
+}
+
+#mh31 {
+    margin: 0px auto 20px auto;
+    padding: 0px 30px 0px 30px;
+}
+
+#mp1 {
+    margin: 0px auto 15px auto;
+    padding: 0px 20px 0px 20px;
+    width: 98%;
+    text-align: center;
+}
+
+#cell131 {
+    display: block;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+    -background: none;
+    width: 90%;
+    -border: 1px solid red;
+}
+
+#h33 {
+    margin: 0px auto 20px auto;
+}
+
+.cell4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    column-gap: 0px;
+    row-gap: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    padding: 40px 0px 40px 0px;
+    margin: 0px auto;
+    background: none;
+    width: 100%;
+}
+
+#optionsBlock {
+    width: 530px;
+    z-index: 99;
+    overflow: Scroll;
+}
+
+.container>div {}
+
+#dialContainer {
+    border: 1px solid red;
+    position: relative;
+    display: grid;
+    place-items: center;
+    top: 30vh;
+    left: 65px;
+    height: min-content;
+    width: min-content;
+}
+
+#inner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#outer {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+}

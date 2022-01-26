@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?1ktavu');
+    src: url('fonts/icomoon.eot?1ktavu#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?1ktavu') format('truetype'), url('fonts/icomoon.woff?1ktavu') format('woff'), url('fonts/icomoon.svg?1ktavu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('fonts/Raleway-ExtraBold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('fonts/Raleway-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuicksandLight';
+    src: url('fonts/Quicksand-Light.woff2') format('woff2'), url('Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindMed';
+    src: url('fonts/Hind-Medium.woff2') format('woff2'), url('Hind-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindReg';
+    src: url('fonts/Hind-Regular.woff2') format('woff2'), url('fonts/Hind-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind-Regular';
+    src: url('fonts/Hind-Regular.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind-Light';
+    src: url('fonts/Hind-Light.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindMadurai-Light';
+    src: url('fonts/HindMadurai-Light.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HindMadurai-Regular';
+    src: url('fonts/HindMadurai-Regular.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hind-Medium';
+    src: url('fonts/Hind-Medium.ttf') format('trueType');
+    font-weight: normal;
+    font-style: normal;
+}
