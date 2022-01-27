@@ -1,8 +1,9 @@
 var tmpAnimation = 0;
+var tmpAnimation2 = 0;
 
 function rotate(x, y) {
 
-    var elem = $("#inner");
+    var elem = $("#innerLeft");
     tmpAnimation += y;
     $({
         degrees: tmpAnimation - y
@@ -18,21 +19,54 @@ function rotate(x, y) {
     });
 
     setTimeout(() => {
-        $("#container").animate({
-            left: "100%"
-
-        }, {
-            duration: 1500
-        });
-        $("#leftContainer").animate({
-            left: "-100%"
-
-        }, {
-            duration: 2550
-        });
+        $("#leftLight").css("background-color", "lime");
+        rotate2(270);
     }, 1500);
-    setTimeout(() => {
-        $("#container").css("display", "none");
-        $("#leftContainer").css("display", "none");
-    }, 3000);
+
 };
+
+function rotate2(x) {
+
+    var elem = $("#innerRight");
+    tmpAnimation2 += x;
+    $({
+        degrees: tmpAnimation2 - x
+    }).animate({
+        degrees: tmpAnimation2
+    }, {
+        duration: 1000,
+        step: function(now) {
+            elem.css({
+                transform: 'rotate(' + now + 'deg)'
+            });
+        }
+    });
+
+    setTimeout(() => {
+        $("#rightLight").css("background-color", "lime");
+
+    }, 1250);
+    setTimeout(() => {
+        openDoors();
+    }, 2000);
+
+};
+
+function openDoors() {
+    $("#rightContainer").animate({
+        left: "100%"
+
+    }, {
+        duration: 2500
+    });
+    $("#leftContainer").animate({
+        left: "-100%"
+
+    }, {
+        duration: 2500
+    });
+    setTimeout(() => {
+        $("#doors").css("display", "none");
+
+    }, 1500);
+}
