@@ -1,72 +1,57 @@
-var tmpAnimation = 0;
-var tmpAnimation2 = 0;
+var origin1 = 0;
+var origin2 = 0;
 
-function rotate(x, y) {
 
-    var elem = $("#innerLeft");
-    tmpAnimation += y;
+$(".spinner").click(function() {
+    rotate(this.id, 0, 180, 2000, callBackTest);
+})
+
+
+
+function rotate(a, b, c, d, e) {
+    el = "#" + a;
+    var elem = $(el);
+    b += c;
     $({
-        degrees: tmpAnimation - y
+        degrees: b - c
     }).animate({
-        degrees: tmpAnimation
+        degrees: b
     }, {
-        duration: 1000,
-        step: function(now) {
+        duration: d,
+        step: (i) => {
             elem.css({
-                transform: 'rotate(' + now + 'deg)'
+                transform: 'rotate(' + i + 'deg)'
             });
+            i == c ? e(a) : {};
         }
     });
-
-    setTimeout(() => {
-        $("#leftLight").css("background-color", "lime");
-        rotate2(270);
-    }, 1500);
-
 };
 
-function rotate2(x) {
 
-    var elem = $("#innerRight");
-    tmpAnimation2 += x;
-    $({
-        degrees: tmpAnimation2 - x
-    }).animate({
-        degrees: tmpAnimation2
-    }, {
-        duration: 1000,
-        step: function(now) {
-            elem.css({
-                transform: 'rotate(' + now + 'deg)'
-            });
-        }
-    });
+function callBackTest(x) {
+    x == "innerRight" ? (e = "innerLeft", l = "#rightLight") : (e = "innerRight", l = "#leftLight");
+    $(l).css("background-color", "lime");
+    rotate(e, 0, 320, 2000, openDoors);
+}
 
-    setTimeout(() => {
-        $("#rightLight").css("background-color", "lime");
 
-    }, 1250);
-    setTimeout(() => {
-        openDoors();
-    }, 2000);
-
-};
 
 function openDoors() {
-    $("#rightContainer").animate({
-        left: "100%"
+    if ($("#rightLight").css("background-color", "red")) {
+        $("#rightLight").css("background-color", "lime");
+    }
+    if ($("#leftLight").css("background-color", "red")) {
+        $("#leftLight").css("background-color", "lime");
+    }
 
-    }, {
-        duration: 2500
-    });
-    $("#leftContainer").animate({
-        left: "-100%"
 
-    }, {
-        duration: 2500
-    });
-    setTimeout(() => {
+    $("#rightContainer").delay(600).animate({ left: '100%' }, 2000);
+    $("#leftContainer").delay(600).animate({ left: '-100%' }, 2000, function() {
         $("#doors").css("display", "none");
+        console.log("suck my balls");
+    });
 
-    }, 1500);
+
+
+
 }
